@@ -1,4 +1,4 @@
-package com.example.currencyquotes
+package com.alicasts.currencyquotes
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.currencyquotes.ui.theme
+package com.alicasts.currencyquotes.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

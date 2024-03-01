@@ -1,4 +1,4 @@
-package com.example.currencyquotes
+package com.alicasts.currencyquotes
 
 import org.junit.Test
 
