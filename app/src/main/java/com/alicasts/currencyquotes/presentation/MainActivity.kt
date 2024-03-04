@@ -1,4 +1,4 @@
-package com.alicasts.currencyquotes
+package com.alicasts.currencyquotes.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
