@@ -17,5 +17,4 @@ class CoinVsCoinRepositoryImpl @Inject constructor(
         return  api.getCoinVsCoinLastQuoteById(coinVsCoinId)
     }
 
-
 }
