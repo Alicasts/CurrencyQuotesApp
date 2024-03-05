@@ -2,9 +2,7 @@ package com.alicasts.currencyquotes.domain.use_cases.get_coin_vs_coin_details
 
 import com.alicasts.currencyquotes.common.Resource
 import com.alicasts.currencyquotes.data.remote.dto.toCoinVsCoin
-import com.alicasts.currencyquotes.data.remote.dto.toCoinVsCoinListItem
 import com.alicasts.currencyquotes.domain.model.CoinVsCoin
-import com.alicasts.currencyquotes.domain.model.CoinVsCoinListItem
 import com.alicasts.currencyquotes.domain.repository.CoinVsCoinRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

@@ -1,6 +1,6 @@
 package com.alicasts.currencyquotes.domain.model
 
-data class CoinVsCoinListItem(
+data class CoinVsCoinListItemModel(
     val coinVsCoinId: String,
     val coinVsCoinTitle: String
 )
