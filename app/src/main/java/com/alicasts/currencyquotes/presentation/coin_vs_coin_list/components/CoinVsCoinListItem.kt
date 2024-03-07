@@ -1,4 +1,4 @@
-package com.alicasts.currencyquotes.presentation.coin_vs_coin_detail.components
+package com.alicasts.currencyquotes.presentation.coin_vs_coin_list.components
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement

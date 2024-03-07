@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.alicasts.currencyquotes">
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET">
+
+    </uses-permission>
 
     <application
-        android:name=".CoinVsCoinApplication"
+        android:name="com.alicasts.currencyquotes.CoinVsCoinApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,7 +18,7 @@
         android:theme="@style/Theme.CurrencyQuotes"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.MainActivity"
+            android:name="com.alicasts.currencyquotes.presentation.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.CurrencyQuotes">
             <intent-filter>

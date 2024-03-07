@@ -10,11 +10,13 @@ class CoinVsCoinRepositoryImpl @Inject constructor(
     private val api: CoinAwesomeApi
 ) : CoinVsCoinRepository {
     override suspend fun getCoinVsCoinList(): List<CoinVsCoinListItemDto> {
-        return api.getCoinVsCoinList()
+        val response = api.getCoinVsCoinList()
+        return parseCoinVsCoinListResponse(response)
     }
 
     override suspend fun getCoinVsCoinById(coinVsCoinId: String): CoinVsCoinDto {
-        return  api.getCoinVsCoinLastQuoteById(coinVsCoinId)
+        val response = api.getCoinVsCoinLastQuoteById(coinVsCoinId)
+        return parseCoinVsCoinDetailResponse(response)
     }
 
 }

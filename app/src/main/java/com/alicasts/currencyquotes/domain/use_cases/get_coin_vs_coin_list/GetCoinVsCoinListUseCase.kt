@@ -15,13 +15,13 @@ class GetCoinVsCoinListUseCase @Inject constructor(
 ) {
     operator fun invoke(): Flow<Resource<List<CoinVsCoinListItemModel>>> = flow {
         try {
-            emit(Resource.Loading())
+            emit(Resource.Loading<List<CoinVsCoinListItemModel>>())
             val coinVsCoinList = repository.getCoinVsCoinList().map { it.toCoinVsCoinListItem() }
-            emit(Resource.Success(coinVsCoinList))
+            emit(Resource.Success<List<CoinVsCoinListItemModel>>(coinVsCoinList))
         } catch (e: HttpException) {
-            emit(Resource.Error(e.localizedMessage ?: "An expected error occurred."))
+            emit(Resource.Error<List<CoinVsCoinListItemModel>>(e.localizedMessage ?: "An expected error occurred."))
         } catch (e: IOException) {
-            emit(Resource.Error(e.localizedMessage ?: "Couldn't reach server."))
+            emit(Resource.Error<List<CoinVsCoinListItemModel>>(e.localizedMessage ?: "Couldn't reach server."))
         }
     }
 
